@@ -17,8 +17,8 @@ npm start
 | API_KEY              | API key from Ambient Weather                                               |
 | APP_KEY              | Application key from Ambient Weather                                       |
 | MQTT_BROKER_ADDRESS  | MQTT broker URL (eg. `mqtt://localhost:1883`)                              |
-| MQTT_USER            | MQTT broker URL (eg. `mqtt://localhost:1883`)                              |
-| MQTT_PASSWORD        | MQTT password                                                              |
+| MQTT_USER            | Broker user                                                                |
+| MQTT_PASSWORD        | Broker password                                                            |
 | MQTT_UPDATE_TOPIC    | Broker topic for realtime updates from AmbientWeather                      |
 | MQTT_CONNECT_TOPIC   | Broker topic for initial connections to the AmbientWeather Realtime socket |
 | MQTT_SUBSCRIBE_TOPIC | Broker topic for successful subscription to the realtime API               |
