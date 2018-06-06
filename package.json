@@ -1,0 +1,20 @@
+{
+  "name": "phils-bullshit",
+  "version": "0.0.1",
+  "description": "A simple AmbientWeather MQTT broadcaster for use with HomeAssistant",
+  "main": "app.js",
+  "keywords": [
+    "ambientweather",
+    "homeassistant"
+  ],
+  "scripts": {
+    "start":"node -r dotenv/config app.js dotenv_config_path=./.env"
+  },
+  "author": "qbunt",
+  "license": "WTFPL",
+  "dependencies": {
+    "ambient-weather-api": "^0.0.6",
+    "dotenv": "^6.0.0",
+    "mqtt": "^2.18.0"
+  }
+}
