@@ -57,12 +57,23 @@ api.on('subscribed', data => {
     console.log(`${ts()} - subscribed`)
     mClient.publish('aw/subscribe', JSON.stringify(data))
     // publish lastdata as data to avoid update interval blackout:
-    mClient.publish('aw/data', JSON.stringify(data['devices'][0]['lastData']), publishHandler)
+    var lastData = data['devices'][0]['lastData']
+    for (var prop in lastData) {
+        if (lastData.hasOwnProperty(prop)) {
+            mClient.publish('aw/data/' + prop, JSON.stringify(lastData[prop]), publishHandler)
+        }
+    }
 })
 
 api.on('data', data => {
     console.log(`${ts()} - aw data`)
-    mClient.publish('aw/data', JSON.stringify(data), publishHandler)
+    // delete device node to prevent spamming
+    delete data.device
+    for (var prop in data) {
+        if (data.hasOwnProperty(prop)) {
+            mClient.publish('aw/data/' + prop, JSON.stringify(data[prop]), publishHandler)
+        }
+    }
 })
 
 api.connect()
