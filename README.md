@@ -34,7 +34,7 @@ Example of default behavior (MQTT_TOPIC_JSON=true or MQTT_TOPIC_JSON=):
 {"dateutc":1537282680000,"tempf":85.6,"humidity":92,"hourlyrainin":0,"dailyrainin":0,"weeklyrainin":0,"monthlyrainin":1.83,"yearlyrainin":37.23,"totalrainin":37.23,"tempinf":87.8,"humidityin":63,"baromrelin":31.02,"baromabsin":30.06,"dewPoint":83,"lastRain":"2018-09-14T14:56:00.000Z","deviceId":"5a41138884f9e0000d5a822d","date":"2018-09-18T14:58:00.000Z"}
 ```
 
-Example of (MQTT_TOPIC_JSON=false), individual topics with the vaule as the payload:
+Example of (MQTT_TOPIC_JSON=false), individual topics with the value as the payload:
 ```
 aw/data/dateutc
 1537282680000
