@@ -1,3 +1,7 @@
+# Note: Deprecated and unmaintained
+> If you need this for Home Assistant, use the [native AmbientWeather integration](https://www.home-assistant.io/integrations/ambient_station/) instead, I have no interest in maintaining this
+
+
 ##  ambient-mqtt
 This app is designed to subscribe to the AmbientWeather Realtime API and broadcast the messages out over MQTT topics
 
